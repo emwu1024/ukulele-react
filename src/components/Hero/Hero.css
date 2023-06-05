@@ -1,0 +1,55 @@
+/* Hero Section Styling */
+.main {
+  background-color: #1e2f23;
+}
+
+.main-container {
+  background-color: #1e2f23;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-self: center;
+  margin: 0 auto;
+  height: 90vh;
+  z-index: 1;
+  width: 100%;
+  /* padding: 0 50px; */
+}
+
+/* .main-content h1 {
+  font-size: 4rem;
+  background-color: #7dd181;
+  background-image: linear-gradient(to top, #96e8bc 0%, #397957 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  padding-top: 5rem;
+} */
+
+.main-content h2 {
+  font-size: 4rem;
+  background-color: #8a660b;
+  background-image: linear-gradient(to top, #c09c40 0%, #98670c 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.main-content p {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #dad7cd;
+}
+
+.main-img-container {
+  text-align: center;
+}
+
+#main-img {
+  height: 30%;
+  width: 30%;
+}

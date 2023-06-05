@@ -1,0 +1,76 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+/* General Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Cormorant", serif;
+  /* width: 100%; */
+}
+
+html {
+  background-color: #92b36b;
+  min-width: fit-content;
+}
+
+/* Mobile Responsive Styling */
+@media screen and (max-width: 768px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+  }
+
+  .main-content {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .main-content h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .main-content h2 {
+    font-size: 3rem;
+  }
+
+  .main-content p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  #main-img {
+    height: 70%;
+    width: 70%;
+  }
+}
+
+/* looks better without this section of mobile responsive code */
+/* @media screen and (max-width: 480px) {    
+    .main-content h1 {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+    
+    .main-content h2 {
+        font-size: 2rem;
+    }
+
+    .main-content p {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .main-btn {
+        padding: 12px 36px;
+        margin: 2.5rem 0;
+    }
+} */
