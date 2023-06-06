@@ -40,6 +40,7 @@ const Carousel = ({ children }) => {
   };
 
   const goToPrev = () => {
+    console.log("TEST");
     updateIndex(activeIndex - 1);
   };
 

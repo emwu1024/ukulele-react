@@ -100,6 +100,7 @@
 
 /* Style the "Add" button */
 .addBtn {
+  display: inline-flex;
   padding: 10px;
   width: 25%;
   background: #a3b18a;
