@@ -8,10 +8,17 @@ const FaqPage = () => {
   return (
     <>
       <NavBar></NavBar>
-      <div className="accordion">
-        {accordionContent.map(({ title, content }) => (
-          <Accordion title={title} content={content} />
-        ))}
+      <div className="faq-container">
+        <h1 className="page-title">FAQ Page</h1>
+        <p className="page-caption">
+          Hopefully this page will answer most of your Ukulele related
+          questions!
+        </p>
+        <div className="accordion">
+          {accordionContent.map(({ title, content }) => (
+            <Accordion title={title} content={content} />
+          ))}
+        </div>
       </div>
       <Footer></Footer>
     </>

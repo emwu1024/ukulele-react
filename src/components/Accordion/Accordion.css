@@ -4,16 +4,21 @@
   margin: 2rem auto;
 }
 
+.accordion:last-child {
+  margin-bottom: 6rem;
+}
+
 .accordion-title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   cursor: pointer;
-  background-color: #29592c;
+  background-color: #607744;
+  color: #fde7ca;
 }
 
 .accordion-title:hover {
-  background-color: #1e4921;
+  background-color: #364621;
   transition: all 0.9s ease;
 }
 
@@ -27,7 +32,7 @@
 .accordion-title,
 .accordion-content {
   padding: 2rem;
-  border-radius: 5rem;
+  border-radius: 2.5rem;
   margin-bottom: 1rem;
 }
 
@@ -40,7 +45,8 @@
   } */
 
 .accordion-content {
-  background-color: #1a381c;
+  background-color: #8a8b4a;
+  color: #fde7ca;
 }
 
 @media screen and (max-width: 700px) {

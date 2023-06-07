@@ -13,7 +13,7 @@
 }
 
 html {
-  background-color: #92b36b;
+  background-color: #1e2f23;
   min-width: fit-content;
 }
 
@@ -51,6 +51,21 @@ html {
     height: 70%;
     width: 70%;
   }
+}
+
+.page-title {
+  font-size: 4rem;
+  text-align: center;
+  color: #fde7ca;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.page-caption {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fde7ca;
+  margin-bottom: 3rem;
 }
 
 /* looks better without this section of mobile responsive code */

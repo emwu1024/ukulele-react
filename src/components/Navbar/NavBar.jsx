@@ -9,7 +9,7 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="navbar-container">
           <a href="/" id="navbar-logo">
-            <img src="logo-transparent-beige3.png" alt="Ukulele Repo Logo" />
+            <img src="logo-transparent-beige4.png" alt="Ukulele Repo Logo" />
             {/* <i className="fa-solid fa-guitar"></i>Ukulele */}
           </a>
           <div className="navbar-toggle" id="mobile-menu">
@@ -24,14 +24,14 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="navbar-item">
-              <a href="/chords.html" className="navbar-links">
-                Chords
-              </a>
+              <NavLink to="/songs" className="navbar-links">
+                Songs
+              </NavLink>
             </li>
             <li className="navbar-item">
-              <a href="/facts.html" className="navbar-links">
-                Fun Facts
-              </a>
+              <NavLink to="/faq" className="navbar-links">
+                FAQ
+              </NavLink>
             </li>
             <li className="navbar-btn">
               <NavLink className="signup-btn" to="/signup">

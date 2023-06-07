@@ -2,21 +2,25 @@
 // Data will be used to populate the accordion with information
 export const accordionContent = [
   {
-    title: "Plot",
-    content: `Evelyn Quan Wang is a middle-aged Chinese American immigrant who runs a laundromat with her husband, Waymond; two decades earlier, they eloped to the United States and had a daughter, Joy.
-  
-      In the present day, the laundromat is being audited by the Internal Revenue Service (IRS); Waymond is trying to serve Evelyn divorce papers in an attempt to get her attention so they can talk about their marriage; Evelyn's stern and demanding father (referred to as Gong Gong, Cantonese for 'maternal grandfather'[15]) is visiting for her Chinese New Year party; and Joy is dealing with depression[16] and has a strained relationship with her mother, which also includes Evelyn's reluctance to accept that Joy is a lesbian as well as Joy's relationship with her non-Chinese girlfriend Becky. `,
+    title: "What is a Ukulele?",
+    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Tempor orci dapibus ultrices in iaculis. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Dui accumsan sit amet 
+    nulla facilisi morbi tempus. Egestas dui id ornare arcu odio. Faucibus vitae aliquet nec ullamcorper sit amet. Egestas fringilla phasellus 
+    faucibus scelerisque eleifend donec.`,
   },
   {
-    title: "Cast",
-    content: `Michelle Yeoh as Evelyn Quan Wang, 
-      Stephanie Hsu as Joy Wang, 
-      Ke Huy Quan as Waymong Wang, 
-      James Hong as Gong Gong, and 
-      Jamie Lee Curtis as Deidre Beaibeidre.`,
+    title: "How do I tune a Ukulele?",
+    content: `Dictumst vestibulum rhoncus est pellentesque elit. Mi bibendum neque egestas congue. Et tortor at risus viverra adipiscing. 
+    Adipiscing diam donec adipiscing tristique risus. Odio tempor orci dapibus ultrices. Scelerisque purus semper eget duis at. Ultricies lacus sed turpis tincidunt. 
+    Arcu dui vivamus arcu felis. In est ante in nibh mauris cursus mattis molestie a. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant morbi.`,
   },
   {
-    title: "Themes",
-    content: `absurdist fiction, comedy drama, science fiction, fantasy, martial arts films, immigrant narrative, and animation.`,
+    title: "What are the different types of Ukulele?",
+    content: `Magna fringilla urna porttitor rhoncus dolor purus non enim praesent. Aliquam etiam erat velit scelerisque in dictum non consectetur a. 
+    Maecenas volutpat blandit aliquam etiam erat.`,
+  },
+  {
+    title: "I still have questions",
+    content: `If you have more questions, checkout the contact us page!`,
   },
 ];
