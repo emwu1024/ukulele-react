@@ -93,6 +93,8 @@
   border-radius: 50px;
   background: #4e4c30;
   color: #fde7ca;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .signup-btn:hover {
