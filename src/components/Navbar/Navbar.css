@@ -1,4 +1,3 @@
-/* Navbar Styling */
 .navbar {
   background: #141d16;
   height: 7rem;
@@ -9,41 +8,22 @@
   position: sticky;
   top: 0;
   z-index: 999;
-  /* opacity: 0.93; */
 }
 
 .navbar-container {
   display: flex;
   justify-content: space-between;
-  z-index: 1;
   width: 100%;
   margin: 0 auto;
   padding: 0 50px;
 }
 
 #navbar-logo {
-  /* display: flex; */
   cursor: pointer;
   text-decoration: none;
   object-fit: fill;
   height: 80px !important;
 }
-
-/* Old text based logo */
-/* #navbar-logo {
-    background-color: #7dd181;
-    background-image: linear-gradient(to top, #96e8bc 0%, #397957 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-  } */
 
 .fa-guitar {
   margin-right: 0.5rem;
@@ -106,12 +86,11 @@
   transition: all 0.4s ease;
 }
 
-/* Mobile Responsibr Styling */
-/* currently broken WIP */
 @media screen and (max-width: 960px) {
   .navbar-container {
     flex-direction: column;
     align-items: center;
+    background: #141d16;
   }
 
   .navbar-menu {
@@ -154,6 +133,7 @@
 
   #mobile-menu {
     cursor: pointer;
+    margin-top: 0.5rem;
   }
 
   #mobile-menu.is-active .bar:nth-child(2) {
@@ -166,5 +146,9 @@
 
   #mobile-menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navbar {
+    height: 9rem;
   }
 }

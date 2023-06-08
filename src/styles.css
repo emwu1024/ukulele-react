@@ -20,8 +20,8 @@ html {
 /* Mobile Responsive Styling */
 @media screen and (max-width: 768px) {
   .main-container {
-    display: grid;
-    grid-template-columns: auto;
+    /* display: grid;
+    grid-template-columns: auto; */
     align-items: center;
     justify-self: center;
     height: 90vh;
