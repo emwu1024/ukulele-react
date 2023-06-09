@@ -2,7 +2,6 @@
 .carousel {
   overflow: hidden;
   max-width: 100vw;
-  /* min-width: 100vw; */
   width: 100%;
   box-sizing: border-box;
 }
@@ -13,10 +12,6 @@
 }
 
 .carousel-item {
-  /* display: flex;
-  flex-direction: column; 
-  align-items: center; 
-  justify-content: center;  */
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -29,11 +24,9 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  /* border-radius: 20px; */
 }
 
 /* Button Styling */
-
 button {
   border-radius: 100px;
   border: none;
@@ -49,8 +42,6 @@ button:hover {
 }
 
 .btn-container {
-  /* margin: 0px auto;
-  display: table; */
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -91,7 +82,7 @@ button:hover {
   display: inline-block;
 }
 
-/* Carousel nth item backgrounds */
+/* Carousel item backgrounds */
 .first {
   /* Deployed version of netlify did not like the local assets for the carousel so have replaced with online images */
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -99,25 +90,22 @@ button:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://images.unsplash.com/photo-1541447554742-4b7eff548fe1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80");
   background-position-y: 70%;
-  /* filter: brightness(40%); */
+  background-size: contain;
 }
 
 .second {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://images.unsplash.com/photo-1593697972672-b1c1902219e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80");
+  background-size: auto;
 }
 
 .third {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://images.unsplash.com/photo-1518190171695-bbbb69c4a901?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80");
+  background-size: contain;
 }
 
-/* .fourth {
-  background-image: url("/eeaao.jpg");
-} */
-
 /* Text Styling */
-
 .carousel-title {
   font-size: 3rem;
   font-weight: 700;

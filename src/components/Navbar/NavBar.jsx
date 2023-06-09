@@ -14,6 +14,7 @@ const Navbar = () => {
       <div className="navbar-container">
         <NavLink to="/" id="navbar-logo">
           <img
+            className="navbar-logo-img"
             src="logo-transparent-beige4.png"
             alt="Ukulele Repo Logo"
             height="80px"
