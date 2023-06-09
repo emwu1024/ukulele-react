@@ -104,6 +104,10 @@
 
   .navbar-menu.active {
     display: block;
+    position: absolute;
+    top: 8rem;
+    background: #141d16;
+    padding: 2rem;
   }
 
   .navbar-item {
