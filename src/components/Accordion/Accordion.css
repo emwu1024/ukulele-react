@@ -1,7 +1,9 @@
 /* Accordion Styling */
 .accordion {
-  max-width: 600px;
+  max-width: 42rem;
   margin: 2rem auto;
+  font-size: 1.25rem;
+  font-weight: 400;
 }
 
 .accordion:last-child {
@@ -15,6 +17,8 @@
   cursor: pointer;
   background-color: #607744;
   color: #fde7ca;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .accordion-title:hover {
@@ -32,17 +36,9 @@
 .accordion-title,
 .accordion-content {
   padding: 2rem;
-  border-radius: 2.5rem;
+  border-radius: 3rem;
   margin-bottom: 1rem;
 }
-
-/* .accordion-title:first-child {
-    border-radius: 50px 0 0 0;
-  }
-  
-  .accordion-title:last-child {
-  
-  } */
 
 .accordion-content {
   background-color: #8a8b4a;
@@ -50,11 +46,8 @@
 }
 
 @media screen and (max-width: 700px) {
-  body {
-    font-size: 18px;
-  }
-
   .accordion {
     width: 90%;
+    /* font-size: 1.25rem; */
   }
 }
