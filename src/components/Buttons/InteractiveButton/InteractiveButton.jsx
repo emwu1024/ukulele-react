@@ -5,7 +5,7 @@ import "./InteractiveButton.css";
 const InteractiveButton = (props) => {
   return (
     <>
-      <button className="main-btn">
+      <button className="interactive-btn">
         <NavLink className="button" to={props.route}>
           {props.name}
         </NavLink>

@@ -35,12 +35,10 @@ const Footer = () => {
           <div className="social-media-wrap">
             <div className="footer-logo">
               <a href="/" id="footer-logo">
-                <i className="fa-solid fa-guitar"></i>Ukulele Central
+                <i className="fa-solid fa-guitar"></i>UKE Repo
               </a>
             </div>
-            <p className="website-rights">
-              UKULELE CENTRAL 2023. Made by Emily Wu
-            </p>
+            <p className="website-rights">UKE Repo 2023. Made by Emily Wu</p>
             <div className="social-icons">
               <a href="/" className="social-icon-link" target="_blank">
                 <i className="fab fa-facebook"></i>

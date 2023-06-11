@@ -1,27 +1,41 @@
 import React from "react";
 import "./Card.css";
+import Button from "../Buttons/Button/Button";
 
-const Hero = () => {
+const Card = () => {
   return (
     <>
-      {/* Beginner Songs  */}
-      <div className="beginner">
-        <h1 className="page-title">Beginner Songs</h1>
-        <div className="beginner-container">
-          <div className="beginner-card">
-            <h2>New to Ukulele?</h2>
-            <p>These songs are a great starting point for beginners!</p>
-            <button>Let's Go</button>
+      <h1 className="page-title">Don't Know Where To Start?</h1>
+      <div className="beginner-container">
+        <div className="beginner-card">
+          <h2 className="card-title">Beginner Songs</h2>
+          <p className="card-caption">
+            These songs are a great starting point for beginners!
+          </p>
+          <div className="card-btn">
+            <Button
+              className="card-btn"
+              name="Let's Go"
+              route="/songs"
+            ></Button>
           </div>
-          <div className="beginner-card">
-            <h2>Want more songs?</h2>
-            <p>Check out our archive!</p>
-            <button>Let's Go</button>
+          {/* <button>Let's Go</button> */}
+        </div>
+        <div className="beginner-card">
+          <h2 className="card-title">Songs of the Week</h2>
+          <p className="card-caption">Check out the songs of the week!</p>
+          <div className="card-btn">
+            <Button
+              className="card-btn"
+              name="Let's Go"
+              route="/songs"
+            ></Button>
           </div>
+          {/* <button>Let's Go</button> */}
         </div>
       </div>
     </>
   );
 };
 
-export default Hero;
+export default Card;

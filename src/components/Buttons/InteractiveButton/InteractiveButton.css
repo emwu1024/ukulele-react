@@ -1,5 +1,5 @@
 /* Interactive Button Styling */
-.main-btn {
+.interactive-btn {
   font-size: 1.25rem;
   background: #dba054;
   padding: 14px 32px;
@@ -12,14 +12,14 @@
   outline: none;
 }
 
-.main-btn a {
+.interactive-btn a {
   text-decoration: none;
   color: #dad7cd;
   position: relative;
   z-index: 2;
 }
 
-.main-btn:after {
+.interactive-btn:after {
   position: absolute;
   content: "";
   top: 0;
@@ -31,10 +31,10 @@
   border-radius: 70px;
 }
 
-.main-btn:hover {
+.interactive-btn:hover {
   color: #dad7cd;
 }
 
-.main-btn:hover:after {
+.interactive-btn:hover:after {
   width: 100%;
 }

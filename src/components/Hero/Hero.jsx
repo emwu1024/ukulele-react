@@ -12,7 +12,8 @@ const Hero = () => {
               <CarouselItem
                 itemNumber="first"
                 title="Ukulele Repo"
-                caption="A hub for all things ukulele"
+                // caption="A hub for all things ukulele"
+                caption="Want to log your songs for the session? Check out our song list maker here!"
                 route="/profile"
               />
               <CarouselItem

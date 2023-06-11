@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
+import Button from "../Buttons/Button/Button";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -46,9 +47,7 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li className="navbar-btn">
-            <NavLink className="signup-btn" to="/signup">
-              Sign Up
-            </NavLink>
+            <Button name="Sign Up" route="/signup"></Button>
           </li>
         </ul>
       </div>
