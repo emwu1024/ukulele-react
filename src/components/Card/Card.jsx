@@ -6,7 +6,7 @@ const Hero = () => {
     <>
       {/* Beginner Songs  */}
       <div className="beginner">
-        <h1>Beginner Songs</h1>
+        <h1 className="page-title">Beginner Songs</h1>
         <div className="beginner-container">
           <div className="beginner-card">
             <h2>New to Ukulele?</h2>

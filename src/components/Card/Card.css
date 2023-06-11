@@ -4,19 +4,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
-}
-
-.beginner h1 {
-  background-color: #397957;
-  background-image: linear-gradient(to right, #c09c40 0%, #98670c 100%);
-  background-size: 100%;
-  margin-bottom: 5rem;
-  font-size: 2.5rem;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .beginner-container {
@@ -28,7 +15,7 @@
 .beginner-card {
   margin: 1rem;
   height: 525px;
-  width: 400px;
+  width: 25rem;
   border-radius: 15px;
   background-image: linear-gradient(
       to bottom,
@@ -83,7 +70,7 @@
   transition: 0.4s ease-in;
   cursor: pointer;
 }
-
+/* 
 @media screen and (max-width: 960px) {
   .beginner {
     height: 1600px;
@@ -93,19 +80,10 @@
     font-size: 2rem;
     margin-top: 12rem;
   }
-}
+} */
 
-@media screen and (max-width: 480px) {
-  .beginner {
-    height: 1400px;
-  }
-
+@media screen and (max-width: 960px) {
   .beginner-card {
-    width: 300px;
-  }
-
-  .beginner h1 {
-    font-size: 2rem;
-    margin-top: 3rem;
+    width: 30rem;
   }
 }
