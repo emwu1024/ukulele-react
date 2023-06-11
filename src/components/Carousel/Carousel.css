@@ -22,8 +22,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
 }
 
 /* Button Styling */
@@ -111,16 +109,33 @@ button:hover {
   font-weight: 700;
   text-align: center;
   width: 100%;
-  display: block; /* Force the title to be a block element */
-  margin-bottom: 0.5rem; /* Add margin-bottom to create space between title and caption */
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 .carousel-caption {
   text-align: center;
-  display: block; /* Force the caption to be a block element */
+  display: block;
+  white-space: normal;
 }
 
 .carousel-text {
   align-items: center;
   text-align: center;
+  width: 70%;
+  margin: auto;
+}
+
+.carousel-hr {
+  width: 30%;
+  margin: 1rem auto 1rem auto;
+  height: 0.25rem;
+  background-color: #fde7ca;
+}
+
+@media screen and (max-width: 960px) {
+  .carousel-item {
+    background-repeat: no-repeat;
+    background-size: 60rem;
+  }
 }

@@ -14,8 +14,9 @@ export const CarouselItem = (props) => {
     <div className={"carousel-item " + props.itemNumber}>
       <div className="carousel-text">
         <h1 className="carousel-title">{props.title}</h1>
-        <hr />
+        <hr className="carousel-hr" />
         <p className="carousel-caption">{props.caption}</p>
+        {console.log(typeof props.caption)}
         <InteractiveButton
           name="Let's Go"
           route={props.route}
@@ -40,7 +41,6 @@ const Carousel = ({ children }) => {
   };
 
   const goToPrev = () => {
-    console.log("TEST");
     updateIndex(activeIndex - 1);
   };
 

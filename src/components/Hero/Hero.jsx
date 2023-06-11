@@ -5,9 +5,9 @@ import "./Hero.css";
 const Hero = () => {
   return (
     <>
-      <header className="main">
-        <div className="main-container">
-          <div className="main-content">
+      <header>
+        <div className="hero-container">
+          <div className="hero-content">
             <Carousel>
               <CarouselItem
                 itemNumber="first"

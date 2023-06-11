@@ -38,18 +38,18 @@
   -moz-text-fill-color: transparent;
 }
 
-.main-content p {
+.hero-content p {
   margin-top: 1rem;
   font-size: 2rem;
   font-weight: 700;
   color: #dad7cd;
 }
 
-.main-img-container {
+.hero-img-container {
   text-align: center;
 }
 
-#main-img {
+#hero-img {
   height: 30%;
   width: 30%;
 }
