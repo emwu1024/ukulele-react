@@ -1,9 +1,9 @@
 const express = require("express");
  
-// recordRoutes is an instance of the express router.
+// songRoutes is an instance of the express router.
 // We use it to define our routes.
-// The router will be added as a middleware and will take control of requests starting with path /record.
-const recordRoutes = express.Router();
+// The router will be added as a middleware and will take control of requests starting with path /song.
+const songRoutes = express.Router();
  
 // This will help us connect to the database
 const dbo = require("../db/conn");
@@ -12,31 +12,31 @@ const dbo = require("../db/conn");
 const ObjectId = require("mongodb").ObjectId;
  
  
-// This section will help you get a list of all the records.
-recordRoutes.route("/record").get(async function (req, res) {
+// This section will help you get a list of all the songs.
+songRoutes.route("/song").get(async function (req, res) {
   try {
-    const db_connect = await dbo.getDb("employees");
-    const result = await db_connect.collection("records").find({}).toArray();
+    const db_connect = await dbo.getDb("ukeRepoDB");
+    const result = await db_connect.collection("songs").find({}).toArray();
     res.json(result);
   } catch (err) {
     throw err;
   }
 });
  
-// This section will help you get a single record by id
-recordRoutes.route("/record/:id").get(async function (req, res) {
+// This section will help you get a single song by id
+songRoutes.route("/song/:id").get(async function (req, res) {
   try {
     const db_connect = await dbo.getDb();
     const myquery = { _id: ObjectId(req.params.id) };
-    const result = await db_connect.collection("records").findOne(myquery);
+    const result = await db_connect.collection("songs").findOne(myquery);
     res.json(result);
   } catch (err) {
     throw err;
   }
 });
  
-// This section will help you create a new record.
-recordRoutes.route("/record/add").post(async function (req, res) {
+// This section will help you create a new song.
+songRoutes.route("/song/add").post(async function (req, res) {
   try {
     const db_connect = await dbo.getDb();
     const myobj = {
@@ -44,15 +44,15 @@ recordRoutes.route("/record/add").post(async function (req, res) {
       position: req.body.position,
       level: req.body.level,
     };
-    const result = await db_connect.collection("records").insertOne(myobj);
+    const result = await db_connect.collection("songs").insertOne(myobj);
     res.json(result);
   } catch (err) {
     throw err;
   }
 });
  
-// This section will help you update a record by id.
-recordRoutes.route("/update/:id").post(async function (req, res) {
+// This section will help you update a song by id.
+songRoutes.route("/update/:id").post(async function (req, res) {
   try {
     const db_connect = await dbo.getDb();
     const myquery = { _id: ObjectId(req.params.id) };
@@ -63,7 +63,7 @@ recordRoutes.route("/update/:id").post(async function (req, res) {
         level: req.body.level,
       },
     };
-    const result = await db_connect.collection("records").updateOne(myquery, newvalues);
+    const result = await db_connect.collection("songs").updateOne(myquery, newvalues);
     console.log("1 document updated");
     res.json(result);
   } catch (err) {
@@ -71,12 +71,12 @@ recordRoutes.route("/update/:id").post(async function (req, res) {
   }
 });
  
-// This section will help you delete a record
-recordRoutes.route("/:id").delete(async function (req, res) {
+// This section will help you delete a song
+songRoutes.route("/:id").delete(async function (req, res) {
   try {
     const db_connect = await dbo.getDb();
     const myquery = { _id: new ObjectId(req.params.id) };
-    const result = await db_connect.collection("records").deleteOne(myquery);
+    const result = await db_connect.collection("songs").deleteOne(myquery);
     console.log("1 document deleted");
     res.json(result);
   } catch (err) {
@@ -85,4 +85,4 @@ recordRoutes.route("/:id").delete(async function (req, res) {
 });
 
  
-module.exports = recordRoutes;
+module.exports = songRoutes;
